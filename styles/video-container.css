@@ -36,6 +36,21 @@
   .video .description {
     padding-top: 17px;
   }
+  .video .video-information {
+    height: 6rem;
+  }
+  .video .description {
+    top: 62%;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .video .video-information {
+    height: 9rem;
+  }
+  .video .description {
+    top: 70%;
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -147,13 +162,12 @@
   top: 42%;
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: repeat(3, 3rem);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
   "author-i author-p"
   "published-i published-p"
   "view-count-i view-count-p";
   width: 80%;
-  height: 9rem;
   margin-left: 11%;
   align-items: center;
   justify-items: center;
@@ -197,7 +211,6 @@
 
 .video .description {
   position: absolute;
-  top: 70%;
   display: -webkit-box;
   width: 98%;
   margin: 1%;
@@ -213,7 +226,7 @@
 
 .paging {
   position: relative;
-  top: 80%;
+  top: 85%;
   display: flex;
   width: 300px;
   height: 50px;
